@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+</head>
+<body>
+<form method="POST" action="{% url 'register' %}" >
+    {% for message in messages %}
+    {{ message}}
+    {% endfor %}
+    <input type="text" name="name" value="" />
+    <button type="submit"> Register</button>
+</form>
+
+</body>
+</html>
